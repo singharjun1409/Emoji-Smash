@@ -1,0 +1,22 @@
+.playarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+}
+.emoji , .header{
+    display: flex;
+    justify-content: center; /* Horizontal Center */
+    align-items: center; /* Vertical Center */
+    margin: 0;
+}
+.grid{
+    display: block;
+    position: relative;
+    top: 100px;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    justify-content: center; /* Horizontal Center */
+    align-items: center; /* Vertical Center */
+}

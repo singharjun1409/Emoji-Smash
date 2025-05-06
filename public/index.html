@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href = '/views.css' rel = "stylesheet">
+        <link href = 'views.css' rel = "stylesheet">
     </head>
     <body>
         <script src = smash.js defer></script>
@@ -9,15 +9,21 @@
             <h1>Emoji Smash</h1>
         </div>
         <div class = "playarea">
-            <div class = "emoji">
-                <form method = "POST">
-                    <label for = "inputText">Enter the emoji you want to smash</label>
-                    <input type = "text" id = "inputText" required>
-                    <button type = "submit">Start</button>
+            <div class="emoji">
+                <form method="POST">
+                    <label for="emojiSelect">Select the emoji you want to smash:</label>
+                    <select id="emojiSelect" name="emoji" required>
+                        <option value="😀">😀 Grinning Face</option>
+                        <option value="😂">😂 Face with Tears of Joy</option>
+                        <option value="😍">😍 Smiling Face with Heart-Eyes</option>
+                        <option value="😎">😎 Smiling Face with Sunglasses</option>
+                        <option value="🤔">🤔 Thinking Face</option>
+                        <option value="😡">😡 Angry Face</option>
+                    </select>
+                    <button type="submit">Start</button>
                 </form>
             </div>
             <div class = "grid">
-                
             </div>
         </div>
     </body>
