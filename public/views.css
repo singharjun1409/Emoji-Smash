@@ -17,6 +17,7 @@
     width: 500px;
     height: 500px;
     border: 2px solid black;
+    cursor: url('images/hammer.png') , grab;
     
 }
 
@@ -26,6 +27,7 @@
     align-items: center; /* Vertical Center */
     margin: 0;
     font-size: 50px;
+    cursor: grabbing;
 }
 
 .score
