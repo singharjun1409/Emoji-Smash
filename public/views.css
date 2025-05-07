@@ -4,7 +4,7 @@
     justify-content: center; /* Center horizontally */
     align-items: center;    /* Center vertically */
 }
-.emoji , .header{
+.header{
     display: flex;
     justify-content: center; /* Horizontal Center */
     align-items: center; /* Vertical Center */
@@ -17,6 +17,19 @@
     width: 500px;
     height: 500px;
     border: 2px solid black;
+    
+}
+
+.emoji{
+    display: flex;
     justify-content: center; /* Horizontal Center */
     align-items: center; /* Vertical Center */
+    margin: 0;
+    font-size: 50px;
+}
+
+.score
+{
+    display: block;
+    margin-top: 110px;
 }
