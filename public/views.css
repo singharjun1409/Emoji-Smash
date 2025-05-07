@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center; /* Center horizontally */
     align-items: center;    /* Center vertically */
+    width: 100%;
 }
 .header{
     display: flex;
@@ -10,10 +11,34 @@
     align-items: center; /* Vertical Center */
     margin: 0;
 }
+
+/*button
+{
+    display: inline-block;
+    margin: 5px;
+}*/
+
+.emojiForm
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.buttons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
 .grid{
     display: block;
     position: relative;
-    top: 100px;
+    top: 50px;
     width: 500px;
     height: 500px;
     border: 2px solid black;
@@ -31,6 +56,11 @@
     display: none;
 }
 
+.cursor.smash {
+    transform: translate(-50%, -50%) scale(0.85) rotate(-15deg);
+  }
+  
+
 .grid:hover .cursor {
     display: block;
 }
@@ -41,7 +71,7 @@
     justify-content: center; /* Horizontal Center */
     align-items: center; /* Vertical Center */
     margin: 0;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .score
