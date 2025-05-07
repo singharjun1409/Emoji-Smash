@@ -6,6 +6,12 @@ const scoreElement = document.querySelector(".score");
 const gridPosition = grid.getBoundingClientRect();
 let score = 0;
 
+const cursor = document.querySelector('.cursor')
+
+document.addEventListener('mousemove', (e) => {
+  cursor.style.left = e.pageX + 'px';
+  cursor.style.top = e.pageY + 'px';
+});
 
 function runGame()
 {

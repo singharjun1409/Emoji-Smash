@@ -17,9 +17,24 @@
     width: 500px;
     height: 500px;
     border: 2px solid black;
-    cursor: url('images/hammer.png') , grab;
+    cursor: none;
     
 }
+.cursor {
+    position: fixed;
+    width: 64px;
+    height: 64px;
+    background: url('images/mallet_cursor_64x64.png') no-repeat center/contain;
+    pointer-events: none;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.grid:hover .cursor {
+    display: block;
+}
+
 
 .emoji{
     display: flex;
@@ -27,7 +42,6 @@
     align-items: center; /* Vertical Center */
     margin: 0;
     font-size: 50px;
-    cursor: grabbing;
 }
 
 .score
